@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Acme Flex Box</title>
-    <link href="styles.css" rel="stylesheet" type="text/css" />  
+    <link href="styles.css" rel="stylesheet" type="text/css" />
   </head>
-  
+
   <body>
-        <header>
-            <div class = "logo">Acme Layout</div>
-            <div class = "users">Users</div>
-            <div class = "department">Department</div>
-            <div class = "contact">Contact</div>
-        </header>
+    <header>
+      <div id="logo">Acme Layout</div>
+      <div id="users">Users</div>
+      <div id="department">Department</div>
+      <div id="contact">Contact</div>
+    </header>
 
     <h1>Users</h1>
 
-    <div class="createUser">
+    <div id="createUser">
       <div>
         <h1>Create A User</h1>
-        <form class="form">
-            <p>First Name <input type="text" placeholder="Jane"></p>
-            <p>Last Name <input type="text" placeholder="Doe"></p>
-            <p>Department <select type="text"></p>
-                <option value="" selected disabled hidden>--None--</option>
-                <option>Department 1</option>
-                <option>Department 2</option>
-                <option>Department 3</option>
-            </select>
-        </form>
-        <button class="button" id="clear" type="button">Clear</button>
-        <button class="button" id="save" type="button">Save</button>
+
+        <span>First Name <input type="text" placeholder="Jane" /></span>
+        <p>Last Name <input type="text" placeholder="Doe" /></p>
+        <p>
+          Department
+          <select type="text">
+            <option value="" selected disabled hidden>--None--</option>
+            <option>Department 1</option>
+            <option>Department 2</option>
+            <option>Department 3</option>
+          </select>
+        </p>
+        <p>
+          <button class="button" id="clear" type="button">Clear</button>
+          <button class="button" id="save" type="button">Save</button>
+        </p>
       </div>
     </div>
 
-  <div class="outerbox">
-    <div class = 'userBoxes'>
+    <div class="outerbox">
+      <div class="userBoxes">
         <div class="New User">User A</div>
         <div class="New User">User A</div>
         <div class="New User">User A</div>
@@ -44,10 +48,7 @@
         <div class="New User">User A</div>
         <div class="New User">User A</div>
         <div class="New User">User A</div>
+      </div>
     </div>
-  </div>
-
-
-    <script src="script.js"></script>
   </body>
 </html>

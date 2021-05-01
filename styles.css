@@ -4,79 +4,54 @@ html {
 
 header {
   display: flex;
-  flex-wrap: wrap;
   background-color: dodgerblue;
   color: white;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  margin: 0;
+  font-size: 15px;
 }
 
-.logo {
+#logo {
   font-size: 30px;
 }
 
-.users {
-  font-size: 15px;
+#users {
   font-weight: bold;
 }
 
-.department {
-  font-size: 15px;
-}
-
-.contact {
-  font-size: 15px;
-}
-
 h1 {
-  color: rgb(125, 125, 125);
-  margin: 10px;
+  color: gray;
+  text-align: left;
 }
 
-@media (max-width: 400px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
-.createUser {
+#createUser {
   display: flex;
   justify-content: center;
 }
 
-.createUser > div {
-  border: solid 2px rgb(125, 125, 125);
+#createUser div {
+  text-align: center;
+  border: solid 2px gray;
   border-radius: 10px;
   width: calc(100vw / 2);
-  margin: 10px;
+  margin: 20px;
   padding: 10px;
-}
-
-.button {
-  position: relative;
-  left: 35%;
 }
 
 #save {
   background-color: dodgerblue;
   color: white;
 }
-.outerbox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 .userBoxes {
   display: flex;
-  max-width: 950px;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
+
 .userBoxes > div {
-  border: solid 2px rgb(125, 125, 125);
+  border: solid 2px gray;
   border-radius: 10px;
   width: 250px;
   margin: 5px;
@@ -84,8 +59,18 @@ h1 {
   padding: 10px;
 }
 
-@media (max-width: 800px) {
-  .userBoxes {
-    justify-content: space-evenly;
+@media (max-width: 400px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #createUser div {
+    text-align: left;
+  }
+
+  @media (max-width: 800px) {
+    .userBoxes {
+      justify-content: space-evenly;
+    }
   }
 }
